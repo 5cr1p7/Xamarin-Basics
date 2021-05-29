@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Basics.MainPage">
+
+    <StackLayout Padding="8, 8, 8, 0">
+        <!--<Label Text="Введите Ваше имя:" Margin="10, 8, 0, -12" />-->
+        <Entry x:Name="userName" Placeholder="Ваше имя"  />
+        <!--<Label Text="Введите Ваш номер телефона:" Margin="10, 8, 0, -12" />-->
+        <Entry x:Name="userPhone" Keyboard="Numeric" Placeholder="Ваш номер" />
+        <Button Text="Добавить" Clicked="Button_Clicked" />
+        <Button Text="1" Clicked="Button_Clicked_1" />
+        <Label x:Name="userInfo" HorizontalTextAlignment="Center" Margin="0, 16, 0, 0" />
+        <ListView x:Name="usersList" MinimumHeightRequest="1" ItemTapped="usersList_ItemTapped"/>
+        <Label x:Name="usersListLabel" Text="User: "  HorizontalTextAlignment="Center" Margin="0, 16, 0, 0" />
+    </StackLayout>
+
+</ContentPage>
